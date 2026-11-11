@@ -47,6 +47,32 @@ pot.onAnimEnd((anim) => {
     }
   });
       pot.play("idle")
+
+
+loadSprite("Bpot", "assets/B_Potion.png",{
+  sliceX: 2,
+  sliceY: 3,
+  anims: {
+    idle: {
+      from:0, 
+      to: 4
+    }
+  }
+});
+  
+const Bpot = add([
+  sprite('Bpot'),
+  pos(600, 400),
+  scale(5)
+])
+
+
+Bpot.onAnimEnd((anim) => {
+    if (anim === "idle") {
+    Bpot.play("idle")
+    }
+  });
+      Bpot.play("idle")
   
   loadMusic("bg", "assets/bgmusic.mp3");
   loadSound("dead", "assets/dead_2.mp3");
