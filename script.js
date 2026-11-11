@@ -74,6 +74,7 @@ Bpot.onAnimEnd((anim) => {
   });
       Bpot.play("idle")
   
+  //AUDIO WARNING
   loadMusic("bg", "assets/bgmusic.mp3");
   loadSound("dead", "assets/dead_2.mp3");
   loadSound("step", "assets/step.mp3");
